@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- STOP GOOGLE -->
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
+
+  <link href="/images/favicon.png" rel="icon" type="image/png" id="changingFavicon" />
+
+
+
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>
+      &#x1F4F0;
+  Happening &ndash; Stephen Kistner</title>
+
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+  <link href="/stylesheets/main.css" rel="stylesheet" />
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+
+  <script src="/javascripts/marquee3k.js"></script>
+  <script src="/javascripts/whitewater.min.js"></script>
+  <script src="/javascripts/baffle.js"></script>
+  <script src="/javascripts/all.js"></script>
+
+  </head>
+
+  <body class="projects projects_happening projects_happening_index">
+
+  <nav class="head grid-base">
+  <!--<p class="left"><a href="#">menu</a></p>-->
+
+  <label class="left" for="menu-toggle"><p><span>menu</span></p></label>
+
+
+  <h1 class="logo"><a href="/"><img src="/images/logo.svg" class="svg" alt="Logo" /></a></h1>
+
+  <p class="right">
+    <span class="bigtext"><span class="emoji">&#x1F4AC;</span></span>&nbsp;<a href="mailto:chat@with.sk?Subject=What%27s%20up"><span class="bigtext">chat@with.sk</span><span class="smalltext">email</span></a></p>
+
+</nav>
+
+<input type="checkbox" id="menu-toggle"/>
+
+<div id="menu">
+  <div class="line">
+    <h1><a href="/projects/">all projects</a></h1>
+  </div>
+  <div class="line">
+    <h1><a href="/experiments/">experiments</a></h1>
+  </div>
+  <div class="line">
+    <h1><a href="/about/">about SK</a></h1>
+  </div>
+
+
+
+</div>
+
+
+
+      <div class="pagination">
+          <h1 class="prev"><span class="emoji-left">&#x1F448;</span><a id="prevlink" href="/projects/derive/">prev&nbsp;project</a></h1>
+
+          <h1 class="next"><a id="nextlink" href="/projects/mica/">next&nbsp;project</a><span class="emoji-right">&#x1F449;</span></h1>
+      </div>
+
+      <!--<div class="line">
+        <h1><a href="/projects/#other">don&rsquo;t forget the other projects</a></h1>
+      </div>-->
+
+
+
+    
+
+
+<div class="line">
+  <h1 class="baffle">Happening</h1>
+</div>
+
+<!--<div class="marquee3k line">
+  <h1 class=""><span class="mini" style="font-size: 20px; display: inline-block; vertical-align: middle;">client:</span>  <span class="mini" style="font-size: 20px; display: inline-block; vertical-align: middle;">skills:</span> a conversational news app</h1>
+</div>-->
+  <div class="marquee3k line" data-spacing="0" style="margin-bottom: 0;">
+
+
+
+  <h1><span class="baffle">Delivering a personalized experience through conversation</span><span class="emoji-both">&#x1F4F0;</span></h1>
+</div>
+
+  <!--<p style="text-align: center; margin-top: 2em;"></p>-->
+
+
+  <div style="background-color: #ff404b">
+
+
+<section>
+
+    <img src="/projects/happening/head.jpg" alt="Head" />
+</section>
+
+  </div>
+
+<section class="summary">
+  <h1>Conversational UI has been touted as the future of user interface design. Whether or not this is viable (probably not), the one thing most messaging platforms lack is effective presentation of embedded content.<br><br>To improve the experience of consuming rich content in conversation, I conceptualized a news app over the course of three weeks. The result mixes the intimacy of messaging with the content accessibility of traditional news apps.</h1>
+</section>
+
+
+
+<section>
+  <div class="phoneimg">
+    <canvas id="mainmov"></canvas>
+  </div>
+
+
+  <script>
+      var canvas = document.getElementById('mainmov');
+      var source = '/whitewater/happening/main/';
+      var options = {
+          autoplay: true,
+          loop: true
+      }
+      runWhitewater(canvas, source, options);
+  </script>
+</section>
+
+
+<section>
+
+    <img src="/projects/happening/research.jpg" alt="Research" />
+
+    <h6>Setting Goals</h6>
+    <p>To focus my research, I conducted a brief competitor audit of news and messaging apps and interviewed my target audience to get a sense of what features to prioritize. From the interviews, I constructed several user personas against which I could test my decisions.</p>
+
+    <h6>I honed in on the following key objectives:</h6>
+
+    <ol>
+      <li>develop an effective method of displaying content within messaging flows</li>
+      <li>explore conversation as a platform for delivering personalized content</li>
+      <li>leverage natural language processing to perform complex actions (like setting custom news updates)</li>
+    </ol>
+</section>
+
+
+<section>
+
+    <img src="/projects/happening/roger.jpg" class="nomargin" alt="Roger" />
+
+    <h6>Delivering a personal experience</h6>
+    <p>Natural language processing has the capacity to provide a highly personalized experience. All interactions in Happening occur through conversation with the AI presence, Roger.</p>
+
+    <p>Roger can engage in conversations about breaking news and deliver bespoke briefings on almost any topic upon request.</p>
+
+    <p>By shifting the focus to conversation, requesting daily news updates becomes a simple question instead of endless responses to a complicated form-based interface.</p>
+</section>
+
+
+<section>
+
+    <p><img src="/projects/happening/longbar.gif" alt="Longbar" /></p>
+
+    <h6>Contextual shortcuts</h6>
+    <p>To reduce the amount of typing necessary, a row of shortcut buttons provides easy access to frequently-used features. The buttons change contextually to show actions that are relevant to the current conversation.</p>
+</section>
+
+
+<section>
+
+    <img src="/projects/happening/horizontal.jpg" class="nomargin" alt="Horizontal" />
+
+    <h6>Collapsing flow</h6>
+    <p>The main goal of this exploration was to find a better way to display embedded messaging content. I decided to present each news story on a card with an emphasized headlines and image to allow for quick scanning.</p>
+
+    <p>During user testing, a concern was that the feed took up a lot of screen real estate and caused the messages to get buried.</p>
+
+    <p>To resolve this, the feed collapses into a horizontally scrolling list when new messages appear at the end of the conversation.</p>
+</section>
+
+
+<section>
+
+    <img src="/projects/happening/outcome2.jpg" class="nomargin" alt="Outcome2" />
+
+    <h6>the outcome</h6>
+    <p>Happening was conceived before the current political situation developed. There is now a greater need than ever to combat misinformation and the bubble effect of social media, and I regret not addressing it with this project.</p>
+
+    <p>Could something like Happening ever catch on as a functional product? Maybe — but talking to robots needs to become standard practice first. Nonetheless, the project provided valuable insight into not only designing but also writing for a new interaction paradigm.</p>
+</section>
+
+
+<div class="marquee3k line" data-reverse="true" data-spacing="0">
+  <h1><span class="baffle">thanks for reading</span><span class="emoji-both">&#x1F44B;</span></h1>
+</div>
+
+
+
+  <footer>
+
+  
+
+      <div class="pagination">
+          <h1 class="prev"><span class="emoji-left">&#x1F448;</span><a id="prevlink" href="/projects/derive/">prev&nbsp;project</a></h1>
+
+          <h1 class="next"><a id="nextlink" href="/projects/mica/">next&nbsp;project</a><span class="emoji-right">&#x1F449;</span></h1>
+      </div>
+
+      <!--<div class="line">
+        <h1><a href="/projects/#other">don&rsquo;t forget the other projects</a></h1>
+      </div>-->
+
+
+  <div class="marquee3k line" data-spacing="0">
+    <h1><span class="emoji-both">&#x1F388;</span><span class="baffle">don&rsquo;t leave just yet</span></h1>
+  </div>
+
+  <div class="marquee3k line" data-spacing="0">
+    <h1><span class="emoji-both">&#x1F447;</span><span class="baffle">check this stuff out</span></h1>
+  </div>
+
+  <div class="line">
+    <h1><a href="/projects/">view all projects</a></h1>
+  </div>
+
+  <div class="line">
+    <h1><a href="/experiments/">fun with the web</a></h1>
+  </div>
+
+  <div class="line">
+    <h1><a href="/about/">who is SK?</a></h1>
+  </div>
+
+
+
+  <div class="marquee3k line">
+    <h1><span class="emoji-both">&#x270C;</span>Thanks for stopping by!</h1>
+  </div>
+
+  <div class="marquee3k line" data-spacing="0">
+    <h1><span class="emoji-both">&#x1F4AC;</span><span class="baffle">let&rsquo;s talk</span></h1>
+  </div>
+
+  <div class="marquee3k line" data-reverse="true" data-spacing="0">
+    <h1><span class="emoji-both">&#x1F4E9;</span>type type<span class="emoji-both">&#x1F4E9;</span><a href="mailto:chat@with.sk?Subject=What%27s%20up">chat@with.sk</a></h1>
+  </div>
+
+  <div class="marquee3k line" data-reverse="true" data-spacing="0">
+    <h1><span class="emoji-both">&#x1F424;</span>tweet tweet<span class="emoji-both">&#x1F424;</span>
+      <a href="https://twitter.com/stephenkistner">@stephenkistner</a></h1>
+  </div>
+
+  <div class="marquee3k line" data-reverse="true">
+    <h1 class="headline">Design is the In-Between.</h1>
+  </div>
+
+<div class="footer-links grid-base">
+  <p class="left">&copy;MMXVII <span class="bigtext">SK</span></p>
+
+  <h1 class="logo"><a href="/"><img src="/images/logo.svg" class="svg" alt="Logo" /></a></h1>
+
+  <p class="right"><a href="/colophon/">credits</a></p>
+</div>
+
+</footer>
+
+
+  <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-92592186-19', 'auto'); ga('send', 'pageview');
+</script>
+
+
+  </body>
+</html>
